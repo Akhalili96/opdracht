@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<form method="get" asp-action="Index">
+    <p>
+        <input type="search" value="@ViewData["GetProductsearch"]" name="Productsearch" />
+        <input type="submit" value="Search" class="btn btn-primary" />
+        <a asp-action="Index">Get All Product</a>
+    </p>
+    
+
+</form>
+<br />
+
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <partial name="_BoxProduct" model="@item" />
+    }
+</div>
+
+
+
+

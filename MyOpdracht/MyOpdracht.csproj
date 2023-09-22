@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20230913104121_initalDatabase.cs" />
+    <Compile Remove="Migrations\20230913104121_initalDatabase.Designer.cs" />
+    <Compile Remove="Migrations\20230913111143_SeedDataCategory.cs" />
+    <Compile Remove="Migrations\20230913111143_SeedDataCategory.Designer.cs" />
+    <Compile Remove="Migrations\20230913124116_addtabel.cs" />
+    <Compile Remove="Migrations\20230913124116_addtabel.Designer.cs" />
+    <Compile Remove="Migrations\20230913131757_seeddata.cs" />
+    <Compile Remove="Migrations\20230913131757_seeddata.Designer.cs" />
+    <Compile Remove="Migrations\20230913132646_flo.cs" />
+    <Compile Remove="Migrations\20230913132646_flo.Designer.cs" />
+    <Compile Remove="Migrations\20230913133513_float.cs" />
+    <Compile Remove="Migrations\20230913133513_float.Designer.cs" />
+    <Compile Remove="Migrations\20230913180432_pitem.cs" />
+    <Compile Remove="Migrations\20230913180432_pitem.Designer.cs" />
+    <Compile Remove="Migrations\20230913181320_nseed.cs" />
+    <Compile Remove="Migrations\20230913181320_nseed.Designer.cs" />
+    <Compile Remove="Migrations\20230913183740_nseed.cs" />
+    <Compile Remove="Migrations\20230913183740_nseed.Designer.cs" />
+    <Compile Remove="Migrations\20230913185342_rseed.cs" />
+    <Compile Remove="Migrations\20230913185342_rseed.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.32">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.32">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
